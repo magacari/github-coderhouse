@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+.main-wrapper {
+
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #000000;
+    background-image: url(./public/image/fondoherramientas2.png); 
+    background-repeat: repeat;
+    background-size: 28rem;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    
+    
+}
+    
+
+
+/*Estilos navegador Index*/
+nav {
+    grid-area: nav;
+    background-color:  #fcfcfcf3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem;
+
+}
+nav h1 a {
+    color: #000;
+}
+nav ul {
+    list-style-type: none;
+}   
+
+.registro{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+h1 {
+    color: #2b2b2be1;
+    text-shadow: 3px 3px 7px #999999;
+    position: absolute;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 2.5rem;
+    top: 1rem;
+}
+
+
+/*Estilos header Index*/
+
+header {
+    /*Estilos de area wrapper general*/
+    grid-area: header;
+    /*Estilos custom de seccion*/
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-columns:min-content;
+    grid-template-rows:min-content;
+    gap: 45px;
+    grid-template-areas:
+        "sectionTecnico sectionPresentacion"
+        "sectionParrafo sectionParrafo"
+        "sectionFlechas sectionFlechas"
+        "sectionSeleccionDispositivo sectionSeleccionDispositivo"        
+    ;
+    
+    
+}
+.sectionPresentacion {
+    color: #ffffffd3;
+    font-family: 'Fredoka One', sans-serif;
+    grid-area: sectionPresentacion;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 3.5px #ff5e00;
+}
+
+.sectionTecnico{
+    grid-area: sectionTecnico;
+    
+}
+
+.sectionParrafo{
+    grid-area: sectionParrafo;
+    color: #ffffffd3;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 3.5px #ff5e00;
+    
+}
+
+.sectionFlechas{
+    
+    grid-area: sectionFlechas;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-shadow: 4px 4px 7px #ff5e00;
+    
+}
+.seleccionDeDispositivo {
+    grid-area: sectionSeleccionDispositivo;
+    color: #ffffffd3;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 2px #ff5e00;
+    
+}
+.tecnico {
+    height: 25rem;
+    width: 14rem;
+}
+.divBoton { 
+    display: none;
+    
+}
+
+
+
+
+/*Estilos main Index*/
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "aireAcondicionado"
+        "desktop"
+        "notebook"
+        "proximamente"
+        "proximamente2"
+        "proximamente3"
+    ;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+.aireAcondicionado, .desktop, .notebook, .proximamente, .proximamente2, .proximamente3 {
+    border: solid;
+}
+
+.aireAcondicionado {
+    grid-area: aireAcondicionado;
+}
+.desktop {
+    grid-area: desktop;
+}
+.notebook {
+    grid-area: notebook;
+}
+.proximamente {
+    grid-area: proximamente;
+}
+.proximamente2 {
+    grid-area: proximamente2;
+}
+.proximamente3 {
+    grid-area: proximamente3;
+}
+.producto {
+    width: 70%;
+    padding: 2rem;
+    margin: 1.5rem;
+    background-color: #f8f8f89c; 
+    box-shadow: 3px 2px 15px #fcdfbe;  
+}
+.imagenes {
+    height: 16rem;
+    width: 16rem;
+}
+.parrafoProducto {
+    color: #ffffff;
+}
+.subtituloIndex {
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #ff5e00;
+    font-size: 3rem;
+    text-align: center;
+}
+/*Estilos footer Index*/
+
+footer {
+     grid-area: footer;
+     text-decoration: none;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+     position:fixed;
+     font-size: 1.5rem;
+     padding: 0.5rem;
+     justify-items: center;
+     align-items: center;
+     left:0px;
+     bottom:0px;
+     height:40px;
+     width:100%;
+     background: #fcfcfc;
+    
+}
+footer section {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/*************************************************/
+
+/* CSS DE DISPOSITIVOS*/
+
+/*-------Estilos Aires Acondicionados-------*/
+.contenedorAires {
+    display: grid;
+    grid-template-areas: 
+    "navAire"
+    "headerAire"
+    "mainAire"
+    "footerAire"  
+    ;
+}
+
+.bodyAires {
+    background-color: #000000;
+    background-image: url(./public/image/fondoAireAcondicionado2.png); 
+    background-repeat: repeat;
+    background-size: 35rem;
+    justify-content: center;
+}
+
+/*Estilos Nav Aires*/
+.navAire {
+    grid-area: navAire;
+}
+
+
+/*Estilos Header Aires*/
+.headerAire {
+    grid-area: headerAire;   
+}
+
+.tituloAire {
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #ff5e00;
+    font-size: 4rem;
+    text-align: center;
+    margin: 25px;
+    padding: 15px;
+}
+
+.subtituloAire {
+    color: #000000;
+    text-shadow: 3px 3px 7px #ff5e00;
+    font-size: 2.2rem;
+    
+}
+
+.esquemaAire {
+
+margin: 1rem;
+box-shadow: 3px 2px 7px #c46a04; 
+background-color: #f0f8ffe5;
+display: flex;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+
+}
+
+.partesAire {
+    font-size: 1.5rem;
+    
+}
+
+/*Estilos Main Aires*/
+.mainAire {
+    grid-area: mainAire;
+}
+.fallasAire {
+
+margin: 1rem 1rem;
+box-shadow: 3px 2px 7px #fcdfbe; 
+background-color: #f0f8ffe5;
+}
+.subtituloMainAire {
+    text-align: center;
+    font-size: 2rem;
+}
+.pMarcas {
+    
+    font-size: 1.5rem;
+}
+.SeleccionFallaAires {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+    background-color: #f8f8f89c; 
+    box-shadow: 3px 2px 15px #302d2a;   
+}
+.imagenAireGoteando { 
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 9.5rem;
+    height: 9.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.sectionFallas {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+.botonNext {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilos Footer Aires*/
+.footerAire {
+    grid-area: footerAire;
+    position:fixed;
+}
+
+/*----------Estilos Notebooks--------*/
+.contenedorNotebook {
+    display: grid;
+    grid-template-areas: 
+    "navNotebook"
+    "headerNotebook"
+    "mainNotebook"
+    "footerNotebook"  
+    ;
+}
+
+.bodyNotebook {
+    background-color: #000000;
+    background-image: url(./public/image/fondoAireAcondicionado2.png); 
+    background-repeat: repeat;
+    background-size: 35rem;
+    justify-content: center;
+}
+
+/*Estilos Nav Notebook*/
+.navNotebook {
+    grid-area: navNotebook;
+}
+
+
+/*Estilos Header Notebook*/
+.headerNotebook {
+    grid-area: headerNotebook;   
+}
+
+.tituloNotebook {
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #ff5e00;
+    font-size: 4rem;
+    text-align: center;
+    margin: 25px;
+    padding: 15px;
+}
+
+.subtituloNotebook {
+    color: #000000;
+    text-shadow: 3px 3px 7px #ff5e00;
+    font-size: 2.2rem;
+    
+}
+
+.esquemaNotebook {
+
+margin: 1rem;
+box-shadow: 3px 2px 7px #c46a04; 
+background-color: #f0f8ffe5;
+display: flex;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+
+}
+
+.partesNotebook {
+    font-size: 1.5rem;
+    
+}
+
+/*Estilos Main Notebook*/
+.mainNotebook {
+    grid-area: mainNotebook;
+}
+.fallasNotebook {
+
+margin: 1rem 1rem;
+box-shadow: 3px 2px 7px #fcdfbe; 
+background-color: #f0f8ffe5;
+}
+.subtituloMainNotebook {
+    text-align: center;
+    font-size: 2rem;
+}
+.pMarcas {
+    
+    font-size: 1.5rem;
+}
+.SeleccionFallaNotebook {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+    background-color: #f8f8f89c; 
+    box-shadow: 3px 2px 15px #302d2a;   
+}
+.imagenNotebookNoEnciende { 
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 9.5rem;
+    height: 9.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.sectionFallas {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+.botonNext {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilos Footer Notebook*/
+.footerNotebook {
+    grid-area: footerNotebook;
+    position:fixed;
+}
+
+
+
+
+
+
+/********************************************/
+/*Media queries*/
+
+@media screen and (min-width: 768px) {
+    
+    .main-wrapper {
+        grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+
+    header {
+        /*Estilos custom de seccion*/
+        
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+        /*-----Estilos grid de Header-----*/
+
+        grid-template-areas: 
+        "sectionTecnico sectionPresentacion"
+        "sectionParrafo"
+        "sectionFlechas"
+        "sectionSeleccionDispositivo"
+        ;
+    }
+    main{
+        flex-direction: row;
+        justify-content: space-around;
+
+        /*-----Estilos Grid de Main-----*/
+
+        grid-template-areas: 
+        "aireAcondicionado desktop"
+        "notebook proximamente"
+        "proximamente2 proximamente3";
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-wrapper {
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer"
+        ;
+    }
+    header {
+        /*Estilos custom de seccion*/
+        
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+        /*-----Estilos grid de Header-----*/
+
+        grid-template-areas: 
+        "sectionTecnico  sectionPresentacion botonStart"
+        "sectionTecnico sectionParrafo sectionParrafo"
+        "sectionSeleccionDispositivo sectionSeleccionDispositivo sectionSeleccionDispositivo"
+        ;
+    }
+    main{
+        flex-direction: row;
+        justify-content: space-around;
+
+        /*-----Estilos Grid de Main-----*/
+
+        grid-template-areas: 
+        "aireAcondicionado desktop notebook"
+        "proximamente proximamente2 proximamente 3"
+        ;
+    }
+    .divBoton{
+        grid-area: botonStart;
+        display:block;
+    
+    }
+    .botonComenzar {
+        height:9rem;
+        width: 9rem;
+    }
+    .sectionFlechas{
+        display: none;
+    }
+    
+    
+
+}
+    
