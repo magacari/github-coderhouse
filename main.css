@@ -532,20 +532,45 @@ background-color: #f0f8ffe5;
     }
     header {
         /*Estilos custom de seccion*/
-        
+        border: 0px;
         flex-direction: row;
-        justify-content: space-around;
-        
+        justify-content: space-evenly;
 
         /*-----Estilos grid de Header-----*/
 
         grid-template-areas: 
-        "sectionTecnico  sectionPresentacion botonStart"
-        "sectionTecnico sectionParrafo sectionParrafo"
+        "sectionParrafo sectionTecnico  sectionPresentacion"
+        "sectionParrafo sectionTecnico botonStart"
         "sectionSeleccionDispositivo sectionSeleccionDispositivo sectionSeleccionDispositivo"
         ;
     }
+    .divBoton{
+        grid-area: botonStart;
+        display:block;
+        height: 19rem;
+        width: 19rem;
+        
+    }
+    .sectionParrafo {
+        grid-area: sectionParrafo;
+    }
+    .sectionTecnico {
+        grid-area: sectionTecnico;
+        
+    }
+    .sectionPresentacion {
+        grid-area: sectionPresentacion;
+    }
+    .sectionSeleccionDispositivo {
+        grid-area: sectionSeleccionDispositivo;
+    }
+    .tecnico{
+        height: 50rem;
+        width: 30rem;
+    }
+
     main{
+        
         flex-direction: row;
         justify-content: space-around;
 
@@ -553,14 +578,29 @@ background-color: #f0f8ffe5;
 
         grid-template-areas: 
         "aireAcondicionado desktop notebook"
-        "proximamente proximamente2 proximamente 3"
+        "proximamente proximamente2 proximamente3"
         ;
     }
-    .divBoton{
-        grid-area: botonStart;
-        display:block;
-    
+    .aireAcondicionado {
+        grid-area: aireAcondicionado;
     }
+    .desktop {
+        grid-area: desktop;
+    }
+    .notebook {
+        grid-area: notebook;
+    }
+    .proximamente {
+        grid-area: proximamente;
+    }
+    .proximamente2{
+        grid-area: proximamente2;
+    }
+    .proximamente3 {
+        grid-area: proximamente3;
+    }
+    
+
     .botonComenzar {
         height:9rem;
         width: 9rem;
@@ -568,8 +608,16 @@ background-color: #f0f8ffe5;
     .sectionFlechas{
         display: none;
     }
-    
-    
+    .footerMobile {
+        display: none;
+    }
+
+    .footerEscritorio {
+        display: block;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+    }
 
 }
     
