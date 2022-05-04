@@ -71,7 +71,7 @@ h1 {
 
 /*Estilos header Index*/
 
-header {
+.headerIndex {
     /*Estilos de area wrapper general*/
     grid-area: header;
     /*Estilos custom de seccion*/
@@ -106,7 +106,7 @@ header {
 
 .sectionParrafo{
     grid-area: sectionParrafo;
-    color: #ffffffd3;
+    color: #cfcfcfd3;
     font-family: 'Fredoka One', sans-serif;
     font-size: 1.5rem;
     box-sizing: border-box;
@@ -125,11 +125,11 @@ header {
 }
 .seleccionDeDispositivo {
     grid-area: sectionSeleccionDispositivo;
-    color: #ffffffd3;
+    color: #cfcfcfd3;
     font-family: 'Fredoka One', sans-serif;
     font-size: 1.5rem;
     box-sizing: border-box;
-    text-shadow: 1px 1px 2px #ff5e00;
+    text-shadow: 2px 2px 3.5px #ff5e00;
     
 }
 .tecnico {
@@ -184,7 +184,7 @@ main {
     grid-area: proximamente3;
 }
 .producto {
-    width: 70%;
+    
     padding: 2rem;
     margin: 1.5rem;
     background-color: #f8f8f89c; 
@@ -484,7 +484,7 @@ background-color: #f0f8ffe5;
 /*Media queries*/
 
 @media screen and (min-width: 768px) {
-    
+    /*+++++++++++Estilos Index en 768px+++++++++++++++++++*/
     .main-wrapper {
         grid-template-areas: 
         "nav"
@@ -535,7 +535,7 @@ background-color: #f0f8ffe5;
     }
     /*--------Estilos header en 1024*/
     
-    header {
+    .headerIndex {
         
         border: 15px;
         flex-direction: row;
@@ -547,6 +547,7 @@ background-color: #f0f8ffe5;
         "sectionParrafo sectionTecnico botonStart"
         ;
         grid-template-columns: 1fr 1fr 1fr;
+        
         
     }
     .divBoton{
@@ -565,6 +566,13 @@ background-color: #f0f8ffe5;
     .sectionPresentacion {
         grid-area: sectionPresentacion;
         font-size: 1.5rem;
+        /*
+        animation-name: presentacion;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 10s;
+        */
         
     }
     .sectionSeleccionDispositivo {
@@ -594,7 +602,7 @@ background-color: #f0f8ffe5;
 
     /*Estilos Main en 1024*/
 
-    main{
+    .mainIndex{
         
         flex-direction: row;
         justify-content: space-around;
@@ -607,6 +615,20 @@ background-color: #f0f8ffe5;
         "aireAcondicionado desktop notebook"
         "proximamente proximamente2 proximamente3"
         ;
+    }
+    .producto{
+        display:grid;
+        justify-items: center;
+        align-items: center;
+        height: 30rem;
+        font-size: 1.5rem;
+    }
+    .imagenes{
+        transition: height 0.5s, width 0.5s;
+    }
+    .imagenes:hover{
+        height: 18rem;
+        width: 18rem;
     }
     .aireAcondicionado {
         grid-area: aireAcondicionado;
@@ -642,4 +664,51 @@ background-color: #f0f8ffe5;
     }
 
 }
+
+/*-------Estilos Aires Acondicionados-------*/
+
+
+/*Estilos Header Aires*/
+
+.headerAire{
     
+    grid-area: headerAire;   
+    border: 15px;
+    margin: 12px;  
+    
+  
+}
+
+.tituloAire {
+    grid-area: tituloAire;
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #ff5e00;
+    font-size: 4rem;
+   
+}
+
+
+
+/*Estilos Main Aires*/
+.mainAire {
+    grid-area: mainAire;
+}
+
+
+.pMarcas {
+    
+    font-size: 1.5rem;
+}
+
+
+
+
+
+    /*Animaciones*/
+    /*@keyframes presentacion {
+        0%{ color: #ffffff00; text-shadow: #ff5e0000; }
+        25%{ color: #ffffff46; text-shadow: #ff5e0038; }
+        50%{ color:#ffffff77; text-shadow: #ff5e006e;}
+        75%{ color: #ffffffc4;text-shadow: #ff5e00ad;}
+        100%{ color:#ffffff;text-shadow: #ff5e00;}
+    }*/
