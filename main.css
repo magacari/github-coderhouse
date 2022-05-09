@@ -40,10 +40,7 @@ body {
 nav {
     background-image: linear-gradient(to right, #888888,#ffffff);
     grid-area: nav;
-    background-color:  #fcfcfcf3;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding: 1.5rem;
 
 }
@@ -59,13 +56,12 @@ nav ul {
     justify-content: flex-end;
     
 }
-h1 {
+.navbar-brand {
     color: #2b2b2be1;
     text-shadow: 3px 3px 7px #ffffff;
-    position: absolute;
     font-family: 'Fredoka One', sans-serif;
-    font-size: 2.5rem;
-    top: 1rem;
+    font-size: 2rem;
+    
 }
 
 
@@ -700,15 +696,3 @@ background-color: #f0f8ffe5;
     font-size: 1.5rem;
 }
 
-
-
-
-
-    /*Animaciones*/
-    /*@keyframes presentacion {
-        0%{ color: #ffffff00; text-shadow: #ff5e0000; }
-        25%{ color: #ffffff46; text-shadow: #ff5e0038; }
-        50%{ color:#ffffff77; text-shadow: #ff5e006e;}
-        75%{ color: #ffffffc4;text-shadow: #ff5e00ad;}
-        100%{ color:#ffffff;text-shadow: #ff5e00;}
-    }*/
