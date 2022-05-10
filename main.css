@@ -67,6 +67,7 @@ nav ul {
 
 /*Estilos header Index*/
 
+
 .headerIndex {
     /*Estilos de area wrapper general*/
     grid-area: header;
@@ -87,7 +88,7 @@ nav ul {
     
 }
 .sectionPresentacion {
-    color: #ffffffd3;
+    color: #fffffffb;
     font-family: 'Fredoka One', sans-serif;
     grid-area: sectionPresentacion;
     font-size: 0.8rem;
@@ -102,12 +103,16 @@ nav ul {
 
 .sectionParrafo{
     grid-area: sectionParrafo;
-    color: #cfcfcfd3;
+    color: #ffffffd3;
     font-family: 'Fredoka One', sans-serif;
     font-size: 1.5rem;
     box-sizing: border-box;
     text-shadow: 2px 2px 3.5px #ff5e00;
     
+}
+#bottom{
+color: #ffffffec;
+font-size: 3rem;
 }
 
 .sectionFlechas{
@@ -121,9 +126,9 @@ nav ul {
 }
 .seleccionDeDispositivo {
     grid-area: sectionSeleccionDispositivo;
-    color: #cfcfcfd3;
+    color: #ffffffec;
     font-family: 'Fredoka One', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.9rem;
     box-sizing: border-box;
     text-shadow: 2px 2px 3.5px #ff5e00;
     
@@ -180,18 +185,20 @@ main {
     grid-area: proximamente3;
 }
 .producto {
-    
-    padding: 2rem;
-    margin: 1.5rem;
+    align-content: center;
+    justify-content: center;
+    margin: 1.5rem;  
     background-color: #f8f8f89c; 
     box-shadow: 3px 2px 15px #fcdfbe;  
 }
+
 .imagenes {
     height: 16rem;
     width: 16rem;
 }
 .parrafoProducto {
     color: #ffffff;
+    font-size: 1.4rem;
 }
 .subtituloIndex {
     color: #ffffff;
@@ -215,7 +222,7 @@ footer {
      bottom:0px;
      height:40px;
      width:100%;
-     background: #fcfcfc;
+     background: #cacacaee;
     
 }
 footer section {
@@ -224,7 +231,12 @@ footer section {
     justify-content: space-around;
     
 }
-
+.legales{
+    color: white;
+}
+.tituloInfo{
+    color: white;
+}
 /*************************************************/
 
 /* CSS DE DISPOSITIVOS*/
@@ -503,7 +515,7 @@ background-color: #f0f8ffe5;
         "sectionTecnico sectionPresentacion"
         "sectionParrafo"
         "sectionFlechas"
-        "sectionSeleccionDispositivo"
+        
         ;
     }
     main{
@@ -517,18 +529,12 @@ background-color: #f0f8ffe5;
         "notebook proximamente"
         "proximamente2 proximamente3";
     }
+    
 }
 
 @media screen and (min-width: 1024px) {
     
-    .main-wrapper {
-        grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "main main main"
-        "footer footer footer"
-        ;
-    }
+    
     /*--------Estilos header en 1024*/
     
     .headerIndex {
@@ -537,13 +543,15 @@ background-color: #f0f8ffe5;
         flex-direction: row;
         justify-content: space-between;
         margin: 12px;
+        display: grid;
 
         grid-template-areas: 
-        "sectionParrafo sectionTecnico  sectionPresentacion"
+        "sectionParrafo sectionTecnico sectionPresentacion"
         "sectionParrafo sectionTecnico botonStart"
+        "seleccionDeDispositivo seleccionDeDispositivo"
         ;
         grid-template-columns: 1fr 1fr 1fr;
-        
+        grid-template-rows: 1fr 0.2fr 0.1fr;
         
     }
     .divBoton{
@@ -562,13 +570,7 @@ background-color: #f0f8ffe5;
     .sectionPresentacion {
         grid-area: sectionPresentacion;
         font-size: 1.5rem;
-        /*
-        animation-name: presentacion;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 2s;
-        animation-delay: 10s;
-        */
+       
         
     }
     .sectionSeleccionDispositivo {
@@ -657,6 +659,10 @@ background-color: #f0f8ffe5;
         flex-wrap: wrap;
         display: flex;
         justify-content: space-evenly;
+    }
+    footer {
+        position:relative;
+        padding: 0px;
     }
 
 }
