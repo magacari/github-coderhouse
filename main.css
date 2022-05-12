@@ -112,7 +112,7 @@ nav ul {
 }
 #bottom{
 color: #ffffffec;
-font-size: 3rem;
+font-size: 2rem;
 }
 
 .sectionFlechas{
@@ -128,7 +128,7 @@ font-size: 3rem;
     grid-area: sectionSeleccionDispositivo;
     color: #ffffffec;
     font-family: 'Fredoka One', sans-serif;
-    font-size: 2.9rem;
+    font-size: 1.5rem;
     box-sizing: border-box;
     text-shadow: 2px 2px 3.5px #ff5e00;
     
@@ -184,7 +184,12 @@ main {
 .proximamente3 {
     grid-area: proximamente3;
 }
+
 .producto {
+    font-size: 1.5rem;
+    display:grid;
+    justify-items: center;
+    align-items: center;
     align-content: center;
     justify-content: center;
     margin: 1.5rem;  
@@ -245,7 +250,7 @@ footer section {
 .contenedorAires {
     display: grid;
     grid-template-areas: 
-    "navAire"
+    
     "headerAire"
     "mainAire"
     "footerAire"  
@@ -375,7 +380,7 @@ background-color: #f0f8ffe5;
 
 .bodyNotebook {
     background-color: #000000;
-    background-image: url(./public/image/fondoAireAcondicionado2.png); 
+    background-image: url(./public/image/fondo\ notebook\ 2.png); 
     background-repeat: repeat;
     background-size: 35rem;
     justify-content: center;
@@ -394,7 +399,7 @@ background-color: #f0f8ffe5;
 
 .tituloNotebook {
     color: #ffffff;
-    text-shadow: 3px 3px 7px #ff5e00;
+    text-shadow: 3px 3px 7px #ff0000;
     font-size: 4rem;
     text-align: center;
     margin: 25px;
@@ -403,7 +408,7 @@ background-color: #f0f8ffe5;
 
 .subtituloNotebook {
     color: #000000;
-    text-shadow: 3px 3px 7px #ff5e00;
+    text-shadow: 3px 3px 7px #ff0000;
     font-size: 2.2rem;
     
 }
@@ -477,14 +482,164 @@ background-color: #f0f8ffe5;
     justify-content: center;
     align-items: center;
 }
+.h3Falla{
+    font-size: 1.5rem;
+}
 /*Estilos Footer Notebook*/
 .footerNotebook {
     grid-area: footerNotebook;
     position:fixed;
 }
 
+/*----------Estilos Pc de Escritorio--------*/
+.contenedorDesktop {
+    display: grid;
+    grid-template-areas: 
+    "navDesktop"
+    "headerDesktop"
+    "mainDesktop"
+    "footerDesktop"  
+    ;
+}
+
+.bodyDesktop {
+    background-color: #000000;
+    background-image: url(./public/image/Fondo\ PC\ gamer.png); 
+    background-repeat: repeat;
+    background-size: 35rem;
+    justify-content: center;
+}
+
+/*Estilos Nav Desktop*/
+.navDesktop {
+    grid-area: navDesktop;
+}
 
 
+/*Estilos Header Desktop*/
+.headerDesktop {
+    grid-area: headerDesktop;   
+}
+
+.tituloDesktop {
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #1900ff;
+    font-size: 4rem;
+    text-align: center;
+    margin: 25px;
+    padding: 15px;
+}
+
+.subtituloDesktop {
+    color: #000000;
+    text-shadow: 3px 3px 7px #1900ff;
+    font-size: 2.2rem;
+    
+}
+
+.esquemaDesktop {
+
+margin: 1rem;
+box-shadow: 3px 2px 7px #c46a04; 
+background-color: #f0f8ffe5;
+display: flex;
+justify-content: center;
+align-content: center;
+flex-wrap: wrap;
+
+}
+
+.partesDesktop {
+    font-size: 1.5rem;
+    
+}
+
+/*Estilos Main Desktop*/
+.mainDesktop {
+    grid-area: mainDesktop;
+}
+.fallasDesktop {
+
+margin: 1rem 1rem;
+box-shadow: 3px 2px 7px #fcdfbe; 
+background-color: #f0f8ffe5;
+}
+.subtituloMainDesktop {
+    text-align: center;
+    font-size: 2rem;
+}
+.pMarcas {
+    
+    font-size: 1.5rem;
+}
+.SeleccionFallaDesktop {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+    background-color: #f8f8f89c; 
+    box-shadow: 3px 2px 15px #302d2a;   
+}
+.imagenDesktopNoEnciende { 
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 9.5rem;
+    height: 9.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.sectionFallas {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+.botonNext {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilos Footer Desktop*/
+.footerDesktop {
+    grid-area: footerDesktop;
+    position:fixed;
+}
+
+/*+++++++++++++++++Estilos redes Sociales+++++++++++++++++*/
+.headerInfo {
+    color: #000000;
+}
+.tituloInfo {
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #1ead0b;
+    font-size: 4rem;
+    text-align: center;
+}
+.legales {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    margin: 2rem 15rem;
+    box-shadow: 3px 2px 7px #1ead0b; 
+    background-color: #f0f8ff1c;
+}
+.container {
+    padding: 3rem;
+    max-width: 50rem;
+}
+.parrafoInfo{
+    
+    color: #ffffff;
+}
+.col{
+    pad: 30px;
+}
 
 
 
@@ -559,9 +714,14 @@ background-color: #f0f8ffe5;
         display:block;
     }
 
+    #bottom{
+        color: #ffffffec;
+        font-size: 3rem;
+        }
+
     .sectionParrafo {
         grid-area: sectionParrafo;
-        font-size: 2.5rem;
+        font-size: 2.5rem;         
     }
     .sectionTecnico {
         grid-area: sectionTecnico;
@@ -569,7 +729,7 @@ background-color: #f0f8ffe5;
     }
     .sectionPresentacion {
         grid-area: sectionPresentacion;
-        font-size: 1.5rem;
+        font-size: 2rem;
        
         
     }
